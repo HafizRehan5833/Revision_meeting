@@ -20,9 +20,15 @@ client = get_database()
 db = client["revision"]
 collection = db["studentsdata"]
 
+
+
+
+
+
+
 app = FastAPI()
 
-# Pydantic model for student data
+# # Pydantic model for student data
 class Student(BaseModel):
     name: str
     age: int
